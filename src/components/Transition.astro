@@ -12,9 +12,9 @@ nullTargetWarn: false, nullTarget: null, nullTargetWarn: false });
     // Initialize ScrollSmoother with settings
     ScrollSmoother.create({
       trialWarn: false,
-  smooth: 2,
-  speed: 2,
-  effects: true,
+  smooth: 1, // Changed from 2
+  speed: 1,  // Changed from 2
+  effects: false, // Changed from true
  normalizeScroll: false,
   smoothTouch: 0.1,
     });
@@ -24,45 +24,6 @@ nullTargetWarn: false, nullTarget: null, nullTargetWarn: false });
       opacity: 0,
       duration: 0.3,
       delay: 0.1,
-    });
-
-    document.addEventListener("click", (e) => {
-      const link = e.target.closest("a");
-      // const mainPreloader = document.querySelector(".main-preloader-od-svg");
-      // const mainPreloaderContainer = document.querySelector(".main-preloader-container");
-
-      if (!link) return;
-
-      const target = link.getAttribute("target");
-      // const preloadSelector = link.getAttribute("preload-svg");
-
-      if (target === "_blank") return; // Let default behavior happen for new tabs
-
-      e.preventDefault();
-
-      // If there's a preload-svg reference, update container
-      // if (preloadSelector) {
-      //   const svgTemplate = document.querySelector(preloadSelector);
-      //   if (svgTemplate) {
-      //     mainPreloaderContainer.innerHTML = svgTemplate.outerHTML;
-      //   } else {
-      //     console.warn(`No SVG found for selector: ${preloadSelector}`);
-      //   }
-      // }
-
-      // Start curtain animation
-      gsap.to(".load-curtain", {
-        opacity: 1,
-        duration: 0.3,
-        onComplete: () => {
-          // You might want to reinsert or update preloader here again
-          // mainPreloader.classList.remove("hidden");
-          // mainPreloaderContainer.innerHTML = mainPreloader.outerHTML;
-
-          // Navigate after animation (uncomment in production)
-          window.location.href = link.href;
-        },
-      });
     });
 
     // // Detect if the device is a touch device (optimized)
