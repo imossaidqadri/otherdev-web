@@ -86,7 +86,7 @@
         "content": "The Other Dev provided us with a website infrastructure that has significantly improved our online operations. Their team's expertise in handling complex data and integrating vital tools has streamlined our project management and enhanced our communication with clients. The website is robust, user-friendly, and has enabled us to showcase our work effectively. We appreciate The Other Dev's professionalism and commitment to delivering a high-quality solution.",
         "author": "Sarim"
       },
-      "secondCover": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "secondCover": "/images/projects/narkins-2025/home-desktop.png"
     }
   },
   {
@@ -96,9 +96,9 @@
     "hasPage": true,
     "year": "2025",
     "description": "End-to-end design, website / SAAS development & branding.",
-    "imageSrc": "/images/projects/finlit-2025/finlit.deployments.otherdev.com_.png",
+    "imageSrc": "/images/projects/finlit-2025/homepage-desktop.png",
     "url": "https://finlit.deployments.otherdev.com/",
-    "coverImage": "/images/projects/finlit-2025/finlit.deployments.otherdev.com_.png",
+    "coverImage": "/images/projects/finlit-2025/homepage-desktop.png",
     "coverImageAlt": "Finlit SaaS Platform Interface",
     "page": {
       "excerpt": "Our collaboration with Finlit involved the comprehensive creation of their SaaS platform, from initial branding and visual identity to the full-stack development of an intuitive and engaging learning application. We focused on delivering a minimalist yet impactful digital experience that empowers users to confidently navigate the world of finance.",
@@ -116,17 +116,6 @@
           ]
         },
         {
-          "heading": "Branding & Visual Identity",
-          "content": "For Finlit, we developed a brand identity centered around clarity and approachability. The logo design minimal and clean, was created to be both memorable and representative of the platform's mission to simplify finance. We established a clean and modern color palette and typography system that conveys trust and ease of understanding. These branding elements were meticulously integrated into the design of the SaaS platform, ensuring a cohesive and professional user experience across all touchpoints.",
-          "tags": [
-            "Brand Identity",
-            "Logo Design",
-            "Color Palette",
-            "Typography",
-            "Visual Guidelines"
-          ]
-        },
-        {
           "heading": "SaaS Platform Development",
           "content": "The development of the Finlit SaaS platform focused on creating an engaging and effective learning environment. We built a scalable web application featuring structured courses, interactive lessons, quizzes, and progress tracking mechanisms. The user interface was designed with a minimalist aesthetic to prioritize content and minimize distractions, ensuring a focused learning experience. We paid close attention to user flow and navigation to create an intuitive and enjoyable path for users to build their financial knowledge. The platform was built using Astro, Next.js & deployed on Vercel with a focus on performance and scalability to accommodate a growing user base and expanding content library.",
           "tags": [
@@ -136,18 +125,6 @@
             "Interactive Content",
             "User Progress Tracking",
             "Scalability"
-          ]
-        },
-        {
-          "heading": "Design & User Experience",
-          "content": "Our design philosophy for Finlit prioritized clarity and ease of use. We opted for a minimalist aesthetic with ample white space and clear typography to enhance readability and reduce cognitive load. The user interface was designed to be intuitive and consistent, allowing users to navigate the platform effortlessly. We focused on creating a seamless learning flow, ensuring that users could easily access course materials, track their progress, and engage with interactive elements. Our goal was to create a digital learning environment that felt both professional and approachable, making financial education accessible to everyone.",
-          "tags": [
-            "Minimalist Design",
-            "User Experience (UX)",
-            "User Interface (UI)",
-            "Information Architecture",
-            "Usability",
-            "Accessibility"
           ]
         }
       ],
@@ -163,7 +140,7 @@
         "content": "Developing Finlit from the ground up was an exciting and rewarding project for our team at Other Dev. We embraced the challenge of creating a comprehensive SaaS platform that simplifies financial literacy through thoughtful branding and intuitive design. Seeing Finlit empower individuals to take control of their financial futures is a testament to the power of well-executed digital solutions.",
         "author": "Kabeer, Founder of Other Dev"
       },
-      "secondCover": "https://images.unsplash.com/photo-1550565211-5608309e310e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "secondCover": "/images/projects/finlit-2025/finlit-courses-macbook.png"
     }
   },
   {
@@ -215,8 +192,9 @@
       "upperSlideshow": [
         "/images/projects/groovy-pakistan-2024/groovy-group.png",
         "/images/projects/groovy-pakistan-2024/groovy-home-mobile.png",
-        "/images/projects/groovy-pakistan-2024/pants.jpg",
-        "/images/projects/groovy-pakistan-2024/shirts-cropped.png"
+        "/images/projects/groovy-pakistan-2024/groovy-home-desktop.png",
+        "/images/projects/groovy-pakistan-2024/groovy-product-desktop.png",
+        "/images/projects/groovy-pakistan-2024/testemonial.png"
       ],
       "testimonial": {
         "content": "Working with Groovy Pakistan on their e-commerce development was a rewarding experience for our team at Other Dev. We focused on understanding their brand ethos and translating that into a functional and visually engaging online platform. Seeing their vision come to life digitally and knowing we played a key role in establishing their online presence is something we take pride in.",
@@ -232,9 +210,9 @@
     "hasPage": true,
     "year": "2024",
     "description": "Website design, development & branding",
-    "imageSrc": "/images/projects/parcheh81-2024/Parcheh.nyc_collections_all.webp",
+    "imageSrc": "/images/projects/parcheh81-2024/homepage-desktop.png",
     "url": "https://parcheh81.com/",
-    "coverImage": "/images/projects/parcheh81-2024/Parcheh.nyc_collections_all.webp",
+    "coverImage": "/images/projects/parcheh81-2024/homepage-desktop.png",
     "coverImageAlt": "Parcheh Store Launch",
     "page": {
       "excerpt": "Our collaboration with Parcheh (Persian for 'fabric') focused on crafting a digital experience true to its name. We translated the unique texture, artistry, and narrative of their textiles into a tailored e-commerce platform where the fabric's details truly shine. The result is an elegant and intuitive site offering users an immersive journey into the brand's world, showcasing our ability to capture a brand's core essence through sophisticated digital design.",
@@ -258,9 +236,9 @@
       "upperSlideshow": [
         "/images/projects/parcheh81-2024/parcheh-home-mobile.png",
         "/images/projects/parcheh81-2024/parcheh-menu-mobile.png",
-        "/images/projects/parcheh81-2024/parcheh-logo-gridded.png",
-        "/images/projects/parcheh81-2024/girl-standing-square.png"
-
+        "/images/projects/parcheh81-2024/homepage-desktop.png",
+        "/images/projects/parcheh81-2024/parcheh-product-desktop.png",
+        "/images/projects/parcheh81-2024/parcheh-logo-gridded.png"
       ],
       "testimonial": {
         "content": "Working with Other Dev transformed Parcheh. Their combined web and branding expertise delivered results beyond expectations. The user-friendly site achieved a dramatic boost in sales, The sophisticated branding reflects our identity perfectly and is now used everywhere. We highly recommend Other Dev to any brand needing impactful digital results.",
@@ -278,7 +256,7 @@
     "description": "Supporting a mission-driven brand with subscription migration (Recharge to Shopify Payments) & optimization.",
     "imageSrc": "/images/projects/tinyfootprintcoffee/tinyfootprintcoffeecoverpage.png",
     "url": "https://www.tinyfootprintcoffee.com/",
-    "coverImage": "/images/projects/tinyfootprintcoffee/tinyfootprintcoffeecoverpage.png",
+    "coverImage": "/images/projects/tinyfootprintcoffee/homepage.png",
     "coverImageAlt": "TinyFoot-print Coffee Website",
     "page": {
       "excerpt": "Our collaboration with Tiny Footprint Coffee, the world's first carbon-negative coffee company, centered on strategically migrating their vital subscription services from Recharge to Shopify Payments. The goal was to unify their e-commerce operations and streamline backend management, freeing them to better focus on their core mission of funding reforestation through coffee sales, while maintaining a seamless experience for their loyal, mission-supporting subscribers. We executed a meticulously planned transition ensuring data integrity and uninterrupted service, resulting in an efficient subscription system fully integrated within Shopify. This project highlights our expertise in complex e-commerce migrations for purpose-driven brands.",
@@ -299,17 +277,16 @@
         }
       ],
       "upperSlideshow": [
-        "/images/projects/parcheh81-2024/parcheh-home-mobile.png",
-        "/images/projects/parcheh81-2024/parcheh-menu-mobile.png",
-        "/images/projects/parcheh81-2024/parcheh-logo-gridded.png",
-        "/images/projects/parcheh81-2024/girl-standing-square.png"
-
+        "/images/projects/tinyfootprintcoffee/collection-mobile.png",
+        "/images/projects/tinyfootprintcoffee/product-mobile.png",
+        "/images/projects/tinyfootprintcoffee/product-desktop.png",
+        "/images/projects/tinyfootprintcoffee/checkout.png"
       ],
       "testimonial": {
         "content": "Other Dev expertly handled our complex subscription migration from Recharge to Shopify Payments. The transition was remarkably smooth, with zero disruption to our subscribers who support our reforestation mission. Managing subscriptions is now much simpler within Shopify, freeing up valuable time for our team to focus on our coffee quality and environmental impact. Their technical skill and careful planning were evident throughout. We highly recommend Other Dev for critical e-commerce migrations, especially for purpose-driven brands.",
         "author": "Alan, Operations Manager at Tiny Footprint Coffee"
       },
-      "secondCover": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "secondCover": "https://images.unsplash.com/photo-1698153869962-87ec57e9e7e5?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   },
   {
@@ -326,5 +303,13 @@
     "description": "Website Design, Website Development & Infrastructure",
     "imageSrc": "https://cdn.jsdelivr.net/gh/kabeer11000/docs-hosted@redirector-content/theotherdev/new-web/ekqadamaur.webp",
     "url": "http://ekqadamaur.kabeers.network/"
+  },
+   {
+    "id": "9",
+    "title": "Website infrastructure creation for Bin Yousuf Group",
+    "year": "2025",
+    "description": "Website Design, Website Development & Infrastructure",
+    "imageSrc": "https://cdn.jsdelivr.net/gh/kabeer11000/docs-hosted@redirector-content/theotherdev/new-web/ekqadamaur.webp",
+    "url": "https://binyousufgroup.com/"
   }
 ]
