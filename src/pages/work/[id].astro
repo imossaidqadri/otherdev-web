@@ -189,7 +189,7 @@ const { page } = project;
             trigger: ".upper-image-slideshow-container",
             start: "top 20%", // When the top of the trigger hits 80% of the viewport
             end: "bottom 10%", // When the bottom of the trigger hits 20% of the viewport
-            scrub: true, // Smoothly link animation progress to scroll
+            scrub: 1, // Smoothly link animation progress to scroll
             markers: false, // For debugging - shows start and end lines
           },
         });
@@ -200,6 +200,9 @@ const { page } = project;
     :root {
       --background: var(--color-neutral-900);
       --text: var(--color-neutral-300);
+    }
+    .upper-slideshow-image {
+      will-change: transform, opacity;
     }
   </style>
 </Layout>
