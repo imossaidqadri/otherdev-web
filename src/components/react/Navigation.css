@@ -1,0 +1,78 @@
+/* src/components/react/Navigation.css */
+
+/* From original Navigation.astro <style> tag */
+.header-blend-mode {
+  mix-blend-mode: difference;
+  will-change: transform; /* Consider if still needed without Astro's specific optimizations */
+  isolation: isolate; /* Often useful with mix-blend-mode */
+}
+
+/* Mobile menu base styles (some transitions are GSAP, some can be CSS) */
+/* The main transform for sliding is handled by GSAP in useMobileMenu.ts */
+/* However, if there were other non-GSAP transitions, they'd go here. */
+/* For example, the original had:
+  #mobile-menu {
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  This is now handled by GSAP. Keep CSS for other base styles if any.
+*/
+
+/* Ensure proper scrolling for mobile menu content - already in Tailwind (overflow-y-auto) */
+/* #mobile-menu > div {
+  overscroll-behavior-y: contain;
+} */
+
+/* Pixel-perfect borders (already handled by Tailwind border-b border-black) */
+/* #mobile-menu li {
+  border-bottom-width: 1px;
+} */
+
+/* Tabular numbers for clock, if not globally set */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dynamic text color classes */
+.nav-text-color-default {
+  color: var(--color-stone-400); /* Matches one of the Astro conditions */
+}
+.nav-text-color-inverted {
+  color: var(--color-stone-400-inverted); /* Matches the other Astro condition */
+}
+
+/* Dynamic underline color classes */
+/* These will apply the ::before pseudo-element's background color */
+.dynamic-underline.nav-text-color-default::before {
+  background-color: var(--color-stone-400);
+}
+
+.dynamic-underline.nav-text-color-inverted::before {
+  background-color: var(--color-stone-400-inverted);
+}
+
+/* Add any other custom styles from Navigation.astro that are not covered by Tailwind */
+/* Example: dynamic-underline might need its base styles here if not global */
+/* Assuming .dynamic-underline and .dynamic-underline-left are defined in a global CSS file.
+   If not, their definitions would be needed here or in a global sheet.
+   For example:
+.dynamic-underline {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dynamic-underline::before {
+  content: '';
+  position: absolute;
+  bottom: -2px; // Adjust as needed
+  left: 0;
+  width: 0;
+  height: 1px; // Adjust as needed
+  transition: width 0.3s ease-out;
+}
+
+.dynamic-underline:hover::before,
+.dynamic-underline-left:hover::before { // Assuming -left means it starts from left
+  width: 100%;
+}
+*/
