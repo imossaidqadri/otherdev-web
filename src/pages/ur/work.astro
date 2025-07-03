@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import SEO from "@/components/SEO.astro";
+import { Image } from "astro:assets";
 
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { sanitize } from "./work/[id].astro";
@@ -38,11 +39,15 @@ else
                     {item.hasPage ?
                       <a href={`${getRelativeLocaleUrl(lang, "work/" + sanitize(item.title))}`}>
                         {item.imageSrc && (
-                          <img 
+                          <Image
                             src={item.imageSrc}
+                            alt={`${item.title} hover image`}
+                            widths={[200, 400, 600]}
+                            sizes="(max-width: 768px) 50vw, 30rem"
+                            format="webp"
                             loading="lazy"
+                            decoding="async"
                             class="w-[30rem] pointer-events-none absolute max-w-[80vw] h-auto left-1/2 translate-x-1/3 bottom-[2rem] group-hover:block hidden transition-all duration-75"
-                            alt={item.title}
                           />
                         )}
                         <h1 class="dynamic-underline-left before:bg-white text-white mt-auto queens-compressed text-left align-bottom text-3xl lg:text-5xl z-0">
@@ -52,11 +57,15 @@ else
                       </a>
                     : <>
                         {item.imageSrc && (
-                          <img
+                          <Image
                             src={item.imageSrc}
+                            alt={`${item.title} hover image`}
+                            widths={[200, 400, 600]}
+                            sizes="(max-width: 768px) 50vw, 30rem"
+                            format="webp"
                             loading="lazy"
+                            decoding="async"
                             class="w-[30rem] pointer-events-none absolute max-w-[80vw] h-auto left-1/2 translate-x-1/3 bottom-[2rem] group-hover:block hidden transition-all duration-75"
-                            alt={item.title}
                           />
                         )}
                         <h1 class="dynamic-underline-left before:bg-white text-white mt-auto queens-compressed text-left align-bottom text-3xl lg:text-5xl z-0">

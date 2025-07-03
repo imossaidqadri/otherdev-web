@@ -51,9 +51,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return paths;
 };
 
+import { Image } from "astro:assets";
+
 const { project }: { project: any } = Astro.props;
 const absoluteImageUrl =
-  project.coverImage ? new URL(project.coverImage, Astro.url).toString() : null;
+  project.coverImage ? new URL(project.coverImage, Astro.url).toString() : null; // Keep for OG tags if needed, or generate from Image component
 const { page } = project;
 ---
 
@@ -103,14 +105,18 @@ const { page } = project;
   </div>
   <div class="-bg-[var(--background)] shadow relative w-full z-2">
     <div class="lg:container lg:mx-auto px-4 lg:p-0">
-      <img
-        inferSize
-        width={200}
-        height={200}
-        src={project.coverImage}
-        alt={project.coverImageAlt}
-        class="mx-auto w-full object-contain"
-      />
+      {project.coverImage && (
+        <Image
+          src={project.coverImage} /* Astro will resolve this from public or src/assets */
+          alt={project.coverImageAlt || `${project.title} cover image`}
+          widths={[400, 800, 1200, 1600, 2000]}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1600px"
+          format="webp"
+          loading="lazy"
+          decoding="async"
+          class="mx-auto w-full object-contain"
+        />
+      )}
       <div class="items-center content-center flex py-[3rem]">
         <p
           class="mr-2"
@@ -146,26 +152,36 @@ const { page } = project;
       }
     </div>
   </div>
-  <div
-    class="duration-250 ease-in-out transition upper-image-slideshow-container brightness-75 hover:brightness-50 cursor-pointer">
-    <img
-      inferSize
-      src={page.secondCover}
-      class="w-full h-auto max-h-screen object-cover shadow-xl upper-slideshow-image"
-      alt=""
-    />
-  </div>
+  {page.secondCover && (
+    <div
+      class="duration-250 ease-in-out transition upper-image-slideshow-container brightness-75 hover:brightness-50 cursor-pointer">
+      <Image
+        src={page.secondCover}
+        alt={project.title + " secondary cover image"}
+        widths={[400, 800, 1200, 1920]}
+        sizes="100vw"
+        format="webp"
+        loading="lazy"
+        decoding="async"
+        class="w-full h-auto max-h-screen object-cover shadow-xl upper-slideshow-image"
+      />
+    </div>
+  )}
   <div
     class="grid h-full grid-cols-1 lg:grid-cols-2 pt-[0rem] gap-y-10-gap-x-8 gap-1 relative overflow-hidden">
     {
-      project.page.upperSlideshow.map((image, index) => (
-        <img
-          inferSize
-          key={image}
-          src={image}
+      project.page.upperSlideshow && project.page.upperSlideshow.map((imageSrc, index) => (
+        <Image
+          key={imageSrc}
+          src={imageSrc}
+          alt={`${project.title} slideshow image ${index + 1}`}
+          widths={[300, 600, 900]}
+          sizes="(max-width: 768px) 100vw, 50vw"
+          format="webp"
+          loading="lazy"
+          decoding="async"
           class="w-full h-auto upper-slideshow-image object-cover"
           data-slide-direction={index % 2 === 0 ? "left" : "right"}
-          alt=""
           style={{ opacity: 0, transform: `translateX(${index % 2 === 0 ? "-100%" : "100%"})` }}
         />
       ))

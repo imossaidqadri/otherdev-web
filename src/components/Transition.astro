@@ -5,18 +5,19 @@
     gsap.config({ trialWarn: false,
 nullTargetWarn: false, nullTarget: null, nullTargetWarn: false });
     gsap.registerPlugin(TextPlugin, ScrollTrigger, ScrollSmoother);
-    ScrollTrigger.create({
-      preventDefault: true,
-      normalizeScroll: true,
-    })
     // Initialize ScrollSmoother with settings
+    // The problematic global ScrollTrigger.create() has been removed.
+    // ScrollSmoother handles scroll normalization if configured.
+    // Consider adjusting smooth, speed, and effects if performance issues persist.
+    // smooth: 1 and speed: 1 are defaults and less resource-intensive.
+    // effects: false can be used if data-speed/data-lag parallax effects are not essential.
     ScrollSmoother.create({
       trialWarn: false,
-  smooth: 2,
-  speed: 2,
-  effects: true,
- normalizeScroll: false,
-  smoothTouch: 0.1,
+      smooth: 2, // Default: 1. Higher values can feel smoother but increase processing.
+      speed: 2, // Default: 1. Multiplies scroll speed.
+      effects: true, // Enables data-speed/data-lag effects. Set to false to save resources.
+      normalizeScroll: true, // Consolidate scroll normalization here.
+      smoothTouch: 0.1, // Default: 0.1
     });
 
     // Curtain animation on page load
