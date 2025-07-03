@@ -167,17 +167,7 @@ const { page } = project;
       />
     </div>
   )}
-  <div
-    class="grid h-full grid-cols-1 lg:grid-cols-2 pt-[0rem] gap-y-10-gap-x-8 gap-1 relative overflow-hidden">
-    {
-      project.page.upperSlideshow && project.page.upperSlideshow.map((imageSrc, index) => (
-        <div>
-          <p>Image Path (Debug): {imageSrc}</p>
-          <img src={imageSrc} alt={`Debug slideshow image ${index + 1}`} style="width:100px; height:auto; border:1px solid red;" />
-        </div>
-      ))
-    }
-  </div>
+  <!-- DIAGNOSTIC: Temporarily removed project.page.upperSlideshow.map(...) section -->
   <div class="py-[3rem] lg:mx-auto px-4 lg:px-0 lg:container">
     <div class="-bg-[var(--background) w-full mx-auto py-[6rem]">
       <h1
