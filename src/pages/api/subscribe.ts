@@ -1,11 +1,11 @@
 import KVClient from "@/lib/kabeer-cloud";
-import { APIRoute } from "astro";
+import type { APIContext } from "astro";
 import nodemailer from "nodemailer";
 
 const client = new KVClient(import.meta.env.STORAGE_CLIENT);
 
-export const POST: APIRoute = async ({ request }) => {
-  const data = await request.json();
+export async function POST(context: APIContext): Promise<Response> {
+  const data = await context.request.json();
   const email = data.email;
 
   if (!email || !/^[\w.-]+@[\w.-]+\.\w+$/.test(email)) {
