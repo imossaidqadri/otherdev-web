@@ -174,15 +174,15 @@ const { page } = project;
         <Image
           key={imageSrc}
           src={imageSrc}
-          alt={`${project.title} slideshow image ${index + 1}`}
+          alt={`${project.title} slideshow image ${index + 1}`} /* Ensuring index is used */
           widths={[300, 600, 900]}
           sizes="(max-width: 768px) 100vw, 50vw"
           format="webp"
           loading="lazy"
           decoding="async"
           class="w-full h-auto upper-slideshow-image object-cover"
-          data-slide-direction={index % 2 === 0 ? "left" : "right"}
-          style={{ opacity: 0, transform: `translateX(${index % 2 === 0 ? "-100%" : "100%"})` }}
+          data-slide-direction={index % 2 === 0 ? "left" : "right"} /* Ensuring index is used */
+          style={{ opacity: 0, transform: `translateX(${index % 2 === 0 ? "-100%" : "100%"})` }} /* Ensuring index is used */
         />
       ))
     }
